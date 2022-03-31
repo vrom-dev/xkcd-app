@@ -2,49 +2,40 @@ import fs from 'fs/promises'
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { useRouter } from 'next/router'
 
-
-import Header from 'components/Header'
 import PageLayout from 'components/PageLayout'
-import { Footer } from 'components/Footer'
 
-export default function Home({ latestComics = [] }) {
-  const router = useRouter()
+export default function Home({ latestComics }) {
 
   return (
     <PageLayout
       title='xkcd - Comics for developers'
       description='Comics for developers'
     >
-      <Header />
-      <main className='max-w-xl m-auto'>
-        <h2 className='text-2xl font-bold text-center mt-5 mb-5'>Latest Comics</h2>
-        <section className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2'>
-          {
-            latestComics.map(comic => {
-              return (
-              <Link 
-                key={comic.id} 
-                href={`/comic/${comic.id}`}
-              >
-                <a className='m-auto mb-4 pb-4'>
-                  <h3 className='font-bold text-sm text-center mb-5'>{comic.title}</h3>
-                  <Image 
-                    src={comic.img} 
-                    alt={comic.alt}
-                    width={comic.width}
-                    height={comic.height}
-                    objectFit='contain'
-                  />
-                </a>
-              </Link>
-              )
-            })
-          }
-        </section>
-      </main>
-      <Footer/>
+      <h2 className='text-2xl font-bold text-center mt-5 mb-5'>Latest Comics</h2>
+      <section className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2'>
+        {
+          latestComics.map(comic => {
+            return (
+            <Link 
+              key={comic.id} 
+              href={`/comic/${comic.id}`}
+            >
+              <a className='m-auto mb-4 pb-4'>
+                <h3 className='font-bold text-sm text-center mb-5'>{comic.title}</h3>
+                <Image 
+                  src={comic.img} 
+                  alt={comic.alt}
+                  width={comic.width}
+                  height={comic.height}
+                  objectFit='contain'
+                />
+              </a>
+            </Link>
+            )
+          })
+        }
+      </section>
     </PageLayout>
   )
 }

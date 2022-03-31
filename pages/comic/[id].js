@@ -6,9 +6,7 @@ import Link from 'next/link'
 
 import { useRouter } from 'next/router'
 
-import Header from 'components/Header'
 import PageLayout from 'components/PageLayout'
-import { Footer } from 'components/Footer'
 
 export default function Comic({ 
   id, 
@@ -29,31 +27,27 @@ export default function Comic({
       title='xkcd - Comics for developers'
       description={`Comic #${id}`}
     >
-      <Header />
-      <main className='max-w-xl m-auto'>
-        <h2 className='text-2xl font-bold text-center mt-5 mb-5'>{`Comic #${id}: ${title}`}</h2>
-        <section className='text-center max-w-sm m-auto'>
-          <Image 
-            src={img} 
-            alt={alt}
-            width={width}
-            height={height}
-            objectFit='contain'
-          />
-          <p className='m-3'>{alt}</p>
-        </section>
-        <div className='flex justify-between m-5'>
-          {hasPrevious && 
-          <Link href={`/comic/${prevId}`}>
-            <a className='text-gray-600'>⬅ Previous</a>
-          </Link>}
-          {hasNext && 
-          <Link href={`/comic/${nextId}`}>
-            <a className='text-gray-600'>Next ➡</a>
-          </Link>}
-        </div>
-      </main>
-      <Footer/>
+      <h2 className='text-2xl font-bold text-center mt-5 mb-5'>{`Comic #${id}: ${title}`}</h2>
+      <section className='text-center max-w-sm m-auto'>
+        <Image 
+          src={img} 
+          alt={alt}
+          width={width}
+          height={height}
+          objectFit='contain'
+        />
+        <p className='m-3'>{alt}</p>
+      </section>
+      <div className='flex justify-between m-5'>
+        {hasPrevious && 
+        <Link href={`/comic/${prevId}`}>
+          <a className='text-gray-600'>⬅ Previous</a>
+        </Link>}
+        {hasNext && 
+        <Link href={`/comic/${nextId}`}>
+          <a className='text-gray-600'>Next ➡</a>
+        </Link>}
+      </div>
     </PageLayout>
   )
 }
