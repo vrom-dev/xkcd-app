@@ -4,8 +4,10 @@
   "year": "2021",
   "safe_title": "Confounding Variables",
   "alt": "You can find a perfect correlation if you just control for the residual.",
-  "img": "https://imgs.xkcd.com/comics/confounding_variables.png",
   "title": "Confounding Variables",
   "day": "27",
+  "height": 278,
+  "width": 644,
+  "img": "https://imgs.xkcd.com/comics/confounding_variables.png",
   "id": 2560
 }

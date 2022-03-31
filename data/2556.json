@@ -4,8 +4,10 @@
   "year": "2021",
   "safe_title": "Turing Complete",
   "alt": "Thanks to the ForcedEntry exploit, your company's entire tech stack can now be hosted out of a PDF you texted to someone.",
-  "img": "https://imgs.xkcd.com/comics/turing_complete.png",
   "title": "Turing Complete",
   "day": "17",
+  "height": 359,
+  "width": 206,
+  "img": "https://imgs.xkcd.com/comics/turing_complete.png",
   "id": 2556
 }

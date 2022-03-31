@@ -4,8 +4,10 @@
   "year": "2021",
   "safe_title": "Dark Arts",
   "alt": "You think, 'okay, THIS is an ideal use case for hardlinks!' but then 6 months later you're doing some extremely cursed Google search like 'javascript ext4' and wondering where things went wrong.",
-  "img": "https://imgs.xkcd.com/comics/dark_arts.png",
   "title": "Dark Arts",
   "day": "20",
+  "height": 368,
+  "width": 290,
+  "img": "https://imgs.xkcd.com/comics/dark_arts.png",
   "id": 2531
 }

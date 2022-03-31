@@ -4,8 +4,10 @@
   "year": "2021",
   "safe_title": "Average Familiarity",
   "alt": "How could anyone consider themselves a well-rounded adult without a basic understanding of silicate geochemistry? Silicates are everywhere! It's hard to throw a rock without throwing one!",
-  "img": "https://imgs.xkcd.com/comics/average_familiarity.png",
   "title": "Average Familiarity",
   "day": "11",
+  "height": 480,
+  "width": 295,
+  "img": "https://imgs.xkcd.com/comics/average_familiarity.png",
   "id": 2501
 }

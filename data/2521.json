@@ -4,8 +4,10 @@
   "year": "2021",
   "safe_title": "Toothpaste",
   "alt": "\"9 out of 10 dentists have banned me from their offices.\"",
-  "img": "https://imgs.xkcd.com/comics/toothpaste.png",
   "title": "Toothpaste",
   "day": "27",
+  "height": 272,
+  "width": 515,
+  "img": "https://imgs.xkcd.com/comics/toothpaste.png",
   "id": 2521
 }
