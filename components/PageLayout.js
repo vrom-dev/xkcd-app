@@ -8,7 +8,7 @@ export default function PageLayout ({
   description = 'Comic app with Next.js'
 }) {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} max-w-3xl ml-auto mr-auto `}>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />

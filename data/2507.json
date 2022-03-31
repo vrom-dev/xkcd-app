@@ -4,8 +4,10 @@
   "year": "2021",
   "safe_title": "USV-C",
   "alt": "Ultra-Serial Violet C light is unpolarized, so you don't have to flip the polarizing filter over when you get the orientation wrong the first time.",
-  "img": "https://imgs.xkcd.com/comics/usv_c.png",
   "title": "USV-C",
   "day": "25",
+  "height": 217,
+  "width": 231,
+  "img": "https://imgs.xkcd.com/comics/usv_c.png",
   "id": 2507
 }

@@ -4,8 +4,10 @@
   "year": "2021",
   "safe_title": "Modern Tools",
   "alt": "I tried to train an AI to repair my Python environment but it kept giving up and deleting itself.",
-  "img": "https://imgs.xkcd.com/comics/modern_tools.png",
   "title": "Modern Tools",
   "day": "1",
+  "height": 446,
+  "width": 237,
+  "img": "https://imgs.xkcd.com/comics/modern_tools.png",
   "id": 2510
 }
