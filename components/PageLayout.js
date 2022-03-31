@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
-import styles from '../styles/Home.module.css'
+import Header from 'components/Header'
+import { Footer } from 'components/Footer'
 
 export default function PageLayout ({
   children, 
@@ -8,13 +9,19 @@ export default function PageLayout ({
   description = 'Comic app with Next.js'
 }) {
   return (
-    <div className={`${styles.container} max-w-3xl ml-auto mr-auto `}>
+    <div >
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {children}
+      <div className='max-w-3xl ml-auto mr-auto'>
+      <Header />
+      <main className='max-w-xl m-auto'>
+        {children}
+      </main>
+      <Footer/>
+      </div>
     </div>
   )
 }

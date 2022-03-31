@@ -10,21 +10,27 @@ export default function Header() {
         </a>
       </Link>
         <ul className='flex gap-2'>
-          <a className='transition-opacity hover:opacity-80'>
             <li>
-              <Link href='/'>Home</Link>
+              <Link href='/'>
+                <a className='transition-opacity hover:opacity-80'>
+                    Home
+                </a>
+              </Link>
             </li>
-          </a>
-          <a className='transition-opacity hover:opacity-80'>
             <li>
-              <Link href='/search'>Search</Link>
+              <Link href='/search'>
+                <a className='transition-opacity hover:opacity-80'>
+                    Search
+                </a>
+              </Link>
             </li>
-          </a>
-          <a className='transition-opacity hover:opacity-80'>
             <li>
-              <Link href='/about'>About</Link>
+              <Link href='/about'>
+                <a className='transition-opacity hover:opacity-80'>
+                    About
+                </a>
+              </Link>
             </li>
-          </a>
         </ul>
       </nav>
     </header>
