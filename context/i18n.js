@@ -11,9 +11,21 @@ const languages = { es, en }
 
 export function I18NProvider({ children }) {
   const { locale } = useRouter()
-  const t = useCallback((key) => {
-    return languages[locale][key]
+
+  const t = useCallback((key, options = {}, ...args) => {
+    const { count } = options
+    let translation = count === 1 ?
+      languages[locale][key].substring(0, languages[locale][key].indexOf('|')) :
+      languages[locale][key].substring(languages[locale][key].indexOf('|') + 1)
+
+    if (args.length === 0) return translation
+
+    args.forEach((value, index) => {
+      translation = translation.replace(`%${index}`, value)
+    })
+    return translation
   }, [locale])
+
   return (
     <I18NContext.Provider value={{ t }}>
       {children}

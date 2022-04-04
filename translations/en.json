@@ -1,3 +1,10 @@
 {
-  "LATEST_COMICS": "Latest comics"
+  "LATEST_COMICS": "Latest comics",
+  "SEARCH_RESULTS_TITLE": "%0 result for %1 | results for %1",
+  "HOME": "Home",
+  "ALL_COMICS_BY_XKCD": "All comics by xkcd",
+  "SEARCH_PLACEHOLDER": "Search...",
+  "SEE_ALL_RESULTS": "See all results (%0)",
+  "PREVIOUS": "Previous",
+  "NEXT": "Next"
 }
