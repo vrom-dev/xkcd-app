@@ -1,9 +1,13 @@
+import { useI18N } from 'context/i18n'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import Search from './Search'
 
 export default function Header() {
-
+  const { t } = useI18N()
+  const { locale, locales } = useRouter()
+  const restOfLocales = locales.filter(l => l !== locale)
 
   return (
     <header className='p-2'>
@@ -16,20 +20,20 @@ export default function Header() {
         <ul className='flex gap-2 items-center'>
           <li>
             <Link href='/'>
-              <a className='transition-opacity hover:opacity-80'>
-                Home
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href='/about'>
-              <a className='transition-opacity hover:opacity-80'>
-                About
+              <a className='font-bold text-sm transition-opacity hover:opacity-80'>
+                {t('HOME')}
               </a>
             </Link>
           </li>
           <li className='relative'>
             <Search />
+          </li>
+          <li className='relative'>
+            <Link href='/' locale={restOfLocales[0]}>
+              <a className='font-bold text-sm transition-opacity hover:opacity-80'>
+                {restOfLocales[0].toUpperCase()}
+              </a>
+            </Link>
           </li>
         </ul>
       </nav>
